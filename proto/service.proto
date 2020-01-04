@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package proto;
+
+message Request{
+  string A = 5;
+}
+
+message Response {
+  string result = 5;
+}
+
+
+service AddService {
+  rpc Add(Request) returns (Response);
+}
